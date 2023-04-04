@@ -29,30 +29,49 @@ struct WalletView: View {
                 Image("rectangle")
                 VStack{
                     Spacer()
-                    Text("Total balance").foregroundColor(.white).opacity(0.6).font(.subheadline)
+                    Text("Total balance").foregroundColor(.white).opacity(0.6).font(.cFont14)
                     Spacer()
                     HStack(alignment: .center){
-                        Text("132.456,99").foregroundColor(.white).font(.largeTitle).fontWeight(.bold)
-                        Text("BTC").foregroundColor(.white).opacity(0.6).font(.subheadline).fontWeight(.bold)
+                        Text("132.456,99").foregroundColor(.white).font(.cFont38).fontWeight(.bold)
+                        Text("BTC").foregroundColor(.white).opacity(0.6).font(.cFont14).fontWeight(.bold)
                     }
                     Spacer()
                     HStack(alignment: .center){
-                        Text("120.912,02").foregroundColor(.white).font(.caption2).fontWeight(.bold)
-                        Text("+8,1%").foregroundColor(.white).opacity(0.6).font(.subheadline).fontWeight(.bold)
+                        Text("120.912,02").foregroundColor(.white).font(.cFont10).fontWeight(.bold)
+                        Text("+8,1%").foregroundColor(.white).opacity(0.6).font(.cFont10).fontWeight(.bold)
                         Image(systemName: "arrow.up").foregroundColor(.white).opacity(0.6).scaleEffect(0.7)
                     }
                     Spacer()
-                    Text("Sell").foregroundColor(Color(red: 0.3176470588235294, green: 0.28627450980392155, blue:0.9686274509803922)).fontWeight(.medium).frame(width: 65.w,height: 40).background(.white).cornerRadius(10)
+                    Text("Sell").foregroundColor(Color(red: 0.3176470588235294, green: 0.28627450980392155, blue:0.9686274509803922)).fontWeight(.medium).frame(width: 65.w,height: 40).background(.white).cornerRadius(10).font(.cFont14)
                     Spacer()
                 }
                 
             }.frame(width: 311,height: 199)
             HStack(alignment: .center){
-                Text("My Portfolio")
+                Text("My Portfolio").font(.cFont16)
                 Spacer()
-                Text("See all").padding(.horizontal,15).padding(.vertical,4).foregroundColor(Color(red: 0.3176470588235294, green: 0.28627450980392155, blue:0.9686274509803922)).font(.caption).overlay(RoundedRectangle(cornerRadius: 5)
+                Text("See all").padding(.horizontal,15).padding(.vertical,4).foregroundColor(Color(red: 0.3176470588235294, green: 0.28627450980392155, blue:0.9686274509803922)).font(.cFont10).overlay(RoundedRectangle(cornerRadius: 5)
                     .stroke(Color.gray.opacity(0.6), lineWidth: 1))
-            }.frame(width: 311).padding(.top)
+            }.frame(width: 311).padding(.vertical )
+            
+            ScrollView(.horizontal,showsIndicators: false){
+                HStack{
+                    PortfolioWidget(name: "BTC", price: 12.434, rate: 8.1,image: "btc")
+                    PortfolioWidget(name: "BTC", price: 12.434, rate: 8.1,image: "btc")
+                    PortfolioWidget(name: "BTC", price: 12.434, rate: 8.1,image: "btc")
+                }.padding(.horizontal,40)
+            }
+            HStack(alignment: .center){
+                Text("Live Prices").font(.cFont16)
+                Spacer()
+                Text("See all").padding(.horizontal,15).padding(.vertical,4).foregroundColor(Color(red: 0.3176470588235294, green: 0.28627450980392155, blue:0.9686274509803922)).font(.cFont10).overlay(RoundedRectangle(cornerRadius: 5)
+                    .stroke(Color.gray.opacity(0.6), lineWidth: 1))
+            }.frame(width: 311).padding(.vertical )
+            
+            
+            VStack{
+                LivePriceWidget(name: "BTC", price: 24150.17, rate: 1.32,amount: 2.73, image: "btc").background(Color(hue: 1.0, saturation: 0.0, brightness: 0.367, opacity: 0.05))
+            }
             Spacer()
         }
     }
