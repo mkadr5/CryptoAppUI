@@ -16,6 +16,8 @@
 		C037539629DA180C0084F1FF /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C037539529DA180C0084F1FF /* Percent.swift */; };
 		C087BB1529DB5FBF008BA7F9 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087BB1429DB5FBF008BA7F9 /* CustomFont.swift */; };
 		C087BB1729DB658B008BA7F9 /* LivePriceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087BB1629DB658B008BA7F9 /* LivePriceWidget.swift */; };
+		C0C624A129E0C618005574A7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C624A029E0C618005574A7 /* MainView.swift */; };
+		C0C624A329E0CD8D005574A7 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C624A229E0CD8D005574A7 /* CustomColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C037539529DA180C0084F1FF /* Percent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percent.swift; sourceTree = "<group>"; };
 		C087BB1429DB5FBF008BA7F9 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		C087BB1629DB658B008BA7F9 /* LivePriceWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePriceWidget.swift; sourceTree = "<group>"; };
+		C0C624A029E0C618005574A7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C0C624A229E0CD8D005574A7 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				C037538A29D9F9730084F1FF /* Preview Content */,
 				C037539529DA180C0084F1FF /* Percent.swift */,
 				C087BB1429DB5FBF008BA7F9 /* CustomFont.swift */,
+				C0C624A229E0CD8D005574A7 /* CustomColor.swift */,
 			);
 			path = CryptoApp;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				C037538629D9F9720084F1FF /* WalletView.swift */,
+				C0C624A029E0C618005574A7 /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,10 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C087BB1529DB5FBF008BA7F9 /* CustomFont.swift in Sources */,
+				C0C624A129E0C618005574A7 /* MainView.swift in Sources */,
 				C037538729D9F9720084F1FF /* WalletView.swift in Sources */,
 				C037539629DA180C0084F1FF /* Percent.swift in Sources */,
 				C02A9F2029DB47DB001F4E24 /* PortfolioWidget.swift in Sources */,
 				C037538529D9F9720084F1FF /* CryptoAppApp.swift in Sources */,
+				C0C624A329E0CD8D005574A7 /* CustomColor.swift in Sources */,
 				C087BB1729DB658B008BA7F9 /* LivePriceWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

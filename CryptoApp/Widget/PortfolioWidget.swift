@@ -33,7 +33,7 @@ struct PortfolioWidget: View {
                 Text("+\(String(format: "%.1f", rate))%").foregroundColor(.green).font(.cFont16)
                 Image(systemName: "arrow.up").foregroundColor(.green).scaleEffect(0.7)
             }.padding(.bottom,20).padding(.horizontal,20)
-        }.frame(width: 220,height: 140).background(Color(hue: 1.0, saturation: 0.0, brightness: 0.367, opacity: 0.05)).cornerRadius(25)
+        }.frame(width: 220,height: 140).background(Color.color2).cornerRadius(25)
     }
 }
 

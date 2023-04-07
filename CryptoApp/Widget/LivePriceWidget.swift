@@ -27,8 +27,6 @@ struct LivePriceWidget: View {
                 Text("-\(String(format: "%.2f", rate))%").foregroundColor(.gray).font(.cFont12)
             }
             Spacer()
-            
-            Spacer()
             VStack(alignment:.trailing){
                 Text("$\(String(format: "%.2f", price))").font(.cFont16)
                 Text("\(String(format: "%.2f", amount)) \(name)").foregroundColor(.gray).font(.cFont12)
@@ -39,6 +37,9 @@ struct LivePriceWidget: View {
 
 struct LivePriceWidget_Previews: PreviewProvider {
     static var previews: some View {
-        LivePriceWidget(name: "BTC", price: 24150.17, rate: 1.32,amount: 2.73, image: "btc")
+        
+            LivePriceWidget(name: "BTC", price: 24150.17, rate: 1.32,amount: 2.73, image: "btc")
+            
+        
     }
 }
