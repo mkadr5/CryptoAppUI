@@ -45,14 +45,14 @@ struct WalletView: View {
                     Text("Sell").foregroundColor(.color1).fontWeight(.medium).frame(width: 65.w,height: 40).background(.white).cornerRadius(10).font(.cFont14)
                     Spacer()
                 }
-            }.frame(width: 80.w,height: 20.h)
-            Spacer()
+            }.frame(width: 80.w,height: 23.h)
+
             HStack(alignment: .center){
                 Text("My Portfolio").font(.cFont16)
                 Spacer()
                 Text("See all").padding(.horizontal,15).padding(.vertical,4).foregroundColor(.color1).font(.cFont10).overlay(RoundedRectangle(cornerRadius: 5)
                     .stroke(Color.gray.opacity(0.6), lineWidth: 1))
-            }.frame(width: 311).padding(.vertical )
+            }.frame(width: 80.w).padding(.vertical)
             
             ScrollView(.horizontal,showsIndicators: false){
                 HStack{
@@ -61,12 +61,13 @@ struct WalletView: View {
                     PortfolioWidget(name: "BTC", price: 12.434, rate: 8.1,image: "btc")
                 }.padding(.horizontal,40)
             }
+            
             HStack(alignment: .center){
                 Text("Live Prices").font(.cFont16)
                 Spacer()
                 Text("See all").padding(.horizontal,15).padding(.vertical,4).foregroundColor(.color1).font(.cFont10).overlay(RoundedRectangle(cornerRadius: 5)
                     .stroke(Color.gray.opacity(0.6), lineWidth: 1))
-            }.frame(width: 311).padding(.vertical )
+            }.frame(width: 80.w).padding(.vertical )
             
             
             VStack(spacing: 0){
